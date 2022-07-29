@@ -1,16 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navbar = () => {
   return ( 
     <nav>
-      <div className="nav">
-        {/* <a href="#" className="nav-logo">Agil/E/thical</a> */}
-        <ul id="nav-ul" className="">
-          <Link href='/'><li><a>Home</a></li></Link>
-          <Link href="/about"><li><a>About</a></li></Link>
-          <Link href="/companies"><li><a>Companies</a></li></Link>
-        </ul>
-      </div>
+      <div className="logo">
+        <Image src='/logo.png' width={128} height={128} />
+        </div>
+        {/* <ul id="nav-ul" className=""> */}
+          <Link href='/'><a>Home</a></Link>
+          <Link href="/about"><a>About</a></Link>
+          <Link href="/companies"><a>Companies</a></Link>
+        {/* </ul> */}
     </nav>
    );
 }
