@@ -2,13 +2,11 @@ const Footer = () => {
   return ( 
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
+        {/* <div className="footer-logo">
           <a href="#">Agil/E/thical</a>
-        </div>
+        </div> */}
         <div className="footer-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Companies</a>
+          <p>Copyright Agil/E/thical 2022</p>
         </div>
       </div>
     </footer>
