@@ -1,4 +1,4 @@
-import styles from '../../styles/Companies.module.css'
+import styles from '../../styles/Companies.module.css';
 import Link from 'next/link';
 
 // runs BEFORE the component is rendered (as opposed to using useEffect)
@@ -16,7 +16,6 @@ export const getStaticProps = async () => {
     // gets attached to the props in the below component
     props: { companies: data }
   }
-
 }
 
 // 'destructure' the property for the value what you want
